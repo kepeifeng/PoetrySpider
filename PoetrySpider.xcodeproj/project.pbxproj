@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19521449B49AA5E165BD74AA /* libPods-PoetrySpider.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D135A4069F24AC72E1ECB87 /* libPods-PoetrySpider.a */; };
 		372A48921BEB93AF007D632A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 372A48911BEB93AF007D632A /* AppDelegate.m */; };
 		372A48951BEB93AF007D632A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 372A48941BEB93AF007D632A /* main.m */; };
 		372A48981BEB93AF007D632A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 372A48971BEB93AF007D632A /* ViewController.m */; };
@@ -51,6 +52,9 @@
 		372A48B11BEB93AF007D632A /* PoetrySpiderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoetrySpiderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		372A48B51BEB93AF007D632A /* PoetrySpiderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoetrySpiderUITests.m; sourceTree = "<group>"; };
 		372A48B71BEB93AF007D632A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51661A6F3F6B652850FA1707 /* Pods-PoetrySpider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoetrySpider.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PoetrySpider/Pods-PoetrySpider.debug.xcconfig"; sourceTree = "<group>"; };
+		6D135A4069F24AC72E1ECB87 /* libPods-PoetrySpider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PoetrySpider.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B454D7B0E8E317C7D9CC8BD0 /* Pods-PoetrySpider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoetrySpider.release.xcconfig"; path = "Pods/Target Support Files/Pods-PoetrySpider/Pods-PoetrySpider.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19521449B49AA5E165BD74AA /* libPods-PoetrySpider.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +90,8 @@
 				372A48A91BEB93AF007D632A /* PoetrySpiderTests */,
 				372A48B41BEB93AF007D632A /* PoetrySpiderUITests */,
 				372A488E1BEB93AF007D632A /* Products */,
+				A11FBA29165D64DEE27822A3 /* Pods */,
+				B65FE6399191BC8F84DFE8DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +147,23 @@
 			path = PoetrySpiderUITests;
 			sourceTree = "<group>";
 		};
+		A11FBA29165D64DEE27822A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51661A6F3F6B652850FA1707 /* Pods-PoetrySpider.debug.xcconfig */,
+				B454D7B0E8E317C7D9CC8BD0 /* Pods-PoetrySpider.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B65FE6399191BC8F84DFE8DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D135A4069F24AC72E1ECB87 /* libPods-PoetrySpider.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 372A48BA1BEB93AF007D632A /* Build configuration list for PBXNativeTarget "PoetrySpider" */;
 			buildPhases = (
+				6B1EEEC189CC956EEC5546B6 /* Check Pods Manifest.lock */,
 				372A48891BEB93AF007D632A /* Sources */,
 				372A488A1BEB93AF007D632A /* Frameworks */,
 				372A488B1BEB93AF007D632A /* Resources */,
+				E74CCCBF0D8193404FDD3C8A /* Embed Pods Frameworks */,
+				479A95EDCEDC0D278B5B4AFD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -263,6 +290,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		479A95EDCEDC0D278B5B4AFD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PoetrySpider/Pods-PoetrySpider-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B1EEEC189CC956EEC5546B6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E74CCCBF0D8193404FDD3C8A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PoetrySpider/Pods-PoetrySpider-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		372A48891BEB93AF007D632A /* Sources */ = {
@@ -400,6 +475,7 @@
 		};
 		372A48BB1BEB93AF007D632A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51661A6F3F6B652850FA1707 /* Pods-PoetrySpider.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -412,6 +488,7 @@
 		};
 		372A48BC1BEB93AF007D632A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B454D7B0E8E317C7D9CC8BD0 /* Pods-PoetrySpider.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -493,6 +570,7 @@
 				372A48BC1BEB93AF007D632A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		372A48BD1BEB93AF007D632A /* Build configuration list for PBXNativeTarget "PoetrySpiderTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +579,7 @@
 				372A48BF1BEB93AF007D632A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		372A48C01BEB93AF007D632A /* Build configuration list for PBXNativeTarget "PoetrySpiderUITests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +588,7 @@
 				372A48C21BEB93AF007D632A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
