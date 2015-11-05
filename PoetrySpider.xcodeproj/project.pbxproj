@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		372A48921BEB93AF007D632A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 372A48911BEB93AF007D632A /* AppDelegate.m */; };
+		372A48951BEB93AF007D632A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 372A48941BEB93AF007D632A /* main.m */; };
+		372A48981BEB93AF007D632A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 372A48971BEB93AF007D632A /* ViewController.m */; };
+		372A489B1BEB93AF007D632A /* PoetrySpider.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 372A48991BEB93AF007D632A /* PoetrySpider.xcdatamodeld */; };
+		372A489D1BEB93AF007D632A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 372A489C1BEB93AF007D632A /* Assets.xcassets */; };
+		372A48A01BEB93AF007D632A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372A489E1BEB93AF007D632A /* Main.storyboard */; };
+		372A48AB1BEB93AF007D632A /* PoetrySpiderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 372A48AA1BEB93AF007D632A /* PoetrySpiderTests.m */; };
+		372A48B61BEB93AF007D632A /* PoetrySpiderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 372A48B51BEB93AF007D632A /* PoetrySpiderUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		372A48A71BEB93AF007D632A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 372A48851BEB93AF007D632A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 372A488C1BEB93AF007D632A;
+			remoteInfo = PoetrySpider;
+		};
+		372A48B21BEB93AF007D632A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 372A48851BEB93AF007D632A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 372A488C1BEB93AF007D632A;
+			remoteInfo = PoetrySpider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		372A488D1BEB93AF007D632A /* PoetrySpider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoetrySpider.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		372A48901BEB93AF007D632A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		372A48911BEB93AF007D632A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		372A48941BEB93AF007D632A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		372A48961BEB93AF007D632A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		372A48971BEB93AF007D632A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		372A489A1BEB93AF007D632A /* PoetrySpider.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PoetrySpider.xcdatamodel; sourceTree = "<group>"; };
+		372A489C1BEB93AF007D632A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		372A489F1BEB93AF007D632A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		372A48A11BEB93AF007D632A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		372A48A61BEB93AF007D632A /* PoetrySpiderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoetrySpiderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		372A48AA1BEB93AF007D632A /* PoetrySpiderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoetrySpiderTests.m; sourceTree = "<group>"; };
+		372A48AC1BEB93AF007D632A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		372A48B11BEB93AF007D632A /* PoetrySpiderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoetrySpiderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		372A48B51BEB93AF007D632A /* PoetrySpiderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoetrySpiderUITests.m; sourceTree = "<group>"; };
+		372A48B71BEB93AF007D632A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		372A488A1BEB93AF007D632A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		372A48A31BEB93AF007D632A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		372A48AE1BEB93AF007D632A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		372A48841BEB93AF007D632A = {
+			isa = PBXGroup;
+			children = (
+				372A488F1BEB93AF007D632A /* PoetrySpider */,
+				372A48A91BEB93AF007D632A /* PoetrySpiderTests */,
+				372A48B41BEB93AF007D632A /* PoetrySpiderUITests */,
+				372A488E1BEB93AF007D632A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		372A488E1BEB93AF007D632A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				372A488D1BEB93AF007D632A /* PoetrySpider.app */,
+				372A48A61BEB93AF007D632A /* PoetrySpiderTests.xctest */,
+				372A48B11BEB93AF007D632A /* PoetrySpiderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		372A488F1BEB93AF007D632A /* PoetrySpider */ = {
+			isa = PBXGroup;
+			children = (
+				372A48901BEB93AF007D632A /* AppDelegate.h */,
+				372A48911BEB93AF007D632A /* AppDelegate.m */,
+				372A48961BEB93AF007D632A /* ViewController.h */,
+				372A48971BEB93AF007D632A /* ViewController.m */,
+				372A489C1BEB93AF007D632A /* Assets.xcassets */,
+				372A489E1BEB93AF007D632A /* Main.storyboard */,
+				372A48A11BEB93AF007D632A /* Info.plist */,
+				372A48991BEB93AF007D632A /* PoetrySpider.xcdatamodeld */,
+				372A48931BEB93AF007D632A /* Supporting Files */,
+			);
+			path = PoetrySpider;
+			sourceTree = "<group>";
+		};
+		372A48931BEB93AF007D632A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				372A48941BEB93AF007D632A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		372A48A91BEB93AF007D632A /* PoetrySpiderTests */ = {
+			isa = PBXGroup;
+			children = (
+				372A48AA1BEB93AF007D632A /* PoetrySpiderTests.m */,
+				372A48AC1BEB93AF007D632A /* Info.plist */,
+			);
+			path = PoetrySpiderTests;
+			sourceTree = "<group>";
+		};
+		372A48B41BEB93AF007D632A /* PoetrySpiderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				372A48B51BEB93AF007D632A /* PoetrySpiderUITests.m */,
+				372A48B71BEB93AF007D632A /* Info.plist */,
+			);
+			path = PoetrySpiderUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		372A488C1BEB93AF007D632A /* PoetrySpider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 372A48BA1BEB93AF007D632A /* Build configuration list for PBXNativeTarget "PoetrySpider" */;
+			buildPhases = (
+				372A48891BEB93AF007D632A /* Sources */,
+				372A488A1BEB93AF007D632A /* Frameworks */,
+				372A488B1BEB93AF007D632A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PoetrySpider;
+			productName = PoetrySpider;
+			productReference = 372A488D1BEB93AF007D632A /* PoetrySpider.app */;
+			productType = "com.apple.product-type.application";
+		};
+		372A48A51BEB93AF007D632A /* PoetrySpiderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 372A48BD1BEB93AF007D632A /* Build configuration list for PBXNativeTarget "PoetrySpiderTests" */;
+			buildPhases = (
+				372A48A21BEB93AF007D632A /* Sources */,
+				372A48A31BEB93AF007D632A /* Frameworks */,
+				372A48A41BEB93AF007D632A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				372A48A81BEB93AF007D632A /* PBXTargetDependency */,
+			);
+			name = PoetrySpiderTests;
+			productName = PoetrySpiderTests;
+			productReference = 372A48A61BEB93AF007D632A /* PoetrySpiderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		372A48B01BEB93AF007D632A /* PoetrySpiderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 372A48C01BEB93AF007D632A /* Build configuration list for PBXNativeTarget "PoetrySpiderUITests" */;
+			buildPhases = (
+				372A48AD1BEB93AF007D632A /* Sources */,
+				372A48AE1BEB93AF007D632A /* Frameworks */,
+				372A48AF1BEB93AF007D632A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				372A48B31BEB93AF007D632A /* PBXTargetDependency */,
+			);
+			name = PoetrySpiderUITests;
+			productName = PoetrySpiderUITests;
+			productReference = 372A48B11BEB93AF007D632A /* PoetrySpiderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		372A48851BEB93AF007D632A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Kent Peifeng Ke";
+				TargetAttributes = {
+					372A488C1BEB93AF007D632A = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					372A48A51BEB93AF007D632A = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 372A488C1BEB93AF007D632A;
+					};
+					372A48B01BEB93AF007D632A = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 372A488C1BEB93AF007D632A;
+					};
+				};
+			};
+			buildConfigurationList = 372A48881BEB93AF007D632A /* Build configuration list for PBXProject "PoetrySpider" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 372A48841BEB93AF007D632A;
+			productRefGroup = 372A488E1BEB93AF007D632A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				372A488C1BEB93AF007D632A /* PoetrySpider */,
+				372A48A51BEB93AF007D632A /* PoetrySpiderTests */,
+				372A48B01BEB93AF007D632A /* PoetrySpiderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		372A488B1BEB93AF007D632A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				372A489D1BEB93AF007D632A /* Assets.xcassets in Resources */,
+				372A48A01BEB93AF007D632A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		372A48A41BEB93AF007D632A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		372A48AF1BEB93AF007D632A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		372A48891BEB93AF007D632A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				372A48981BEB93AF007D632A /* ViewController.m in Sources */,
+				372A48951BEB93AF007D632A /* main.m in Sources */,
+				372A48921BEB93AF007D632A /* AppDelegate.m in Sources */,
+				372A489B1BEB93AF007D632A /* PoetrySpider.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		372A48A21BEB93AF007D632A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				372A48AB1BEB93AF007D632A /* PoetrySpiderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		372A48AD1BEB93AF007D632A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				372A48B61BEB93AF007D632A /* PoetrySpiderUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		372A48A81BEB93AF007D632A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 372A488C1BEB93AF007D632A /* PoetrySpider */;
+			targetProxy = 372A48A71BEB93AF007D632A /* PBXContainerItemProxy */;
+		};
+		372A48B31BEB93AF007D632A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 372A488C1BEB93AF007D632A /* PoetrySpider */;
+			targetProxy = 372A48B21BEB93AF007D632A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		372A489E1BEB93AF007D632A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				372A489F1BEB93AF007D632A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		372A48B81BEB93AF007D632A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		372A48B91BEB93AF007D632A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		372A48BB1BEB93AF007D632A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PoetrySpider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aroh.PoetrySpider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		372A48BC1BEB93AF007D632A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PoetrySpider/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aroh.PoetrySpider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		372A48BE1BEB93AF007D632A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PoetrySpiderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aroh.PoetrySpiderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PoetrySpider.app/Contents/MacOS/PoetrySpider";
+			};
+			name = Debug;
+		};
+		372A48BF1BEB93AF007D632A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PoetrySpiderTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aroh.PoetrySpiderTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PoetrySpider.app/Contents/MacOS/PoetrySpider";
+			};
+			name = Release;
+		};
+		372A48C11BEB93AF007D632A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PoetrySpiderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aroh.PoetrySpiderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PoetrySpider;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		372A48C21BEB93AF007D632A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PoetrySpiderUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.aroh.PoetrySpiderUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PoetrySpider;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		372A48881BEB93AF007D632A /* Build configuration list for PBXProject "PoetrySpider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				372A48B81BEB93AF007D632A /* Debug */,
+				372A48B91BEB93AF007D632A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		372A48BA1BEB93AF007D632A /* Build configuration list for PBXNativeTarget "PoetrySpider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				372A48BB1BEB93AF007D632A /* Debug */,
+				372A48BC1BEB93AF007D632A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		372A48BD1BEB93AF007D632A /* Build configuration list for PBXNativeTarget "PoetrySpiderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				372A48BE1BEB93AF007D632A /* Debug */,
+				372A48BF1BEB93AF007D632A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		372A48C01BEB93AF007D632A /* Build configuration list for PBXNativeTarget "PoetrySpiderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				372A48C11BEB93AF007D632A /* Debug */,
+				372A48C21BEB93AF007D632A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		372A48991BEB93AF007D632A /* PoetrySpider.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				372A489A1BEB93AF007D632A /* PoetrySpider.xcdatamodel */,
+			);
+			currentVersion = 372A489A1BEB93AF007D632A /* PoetrySpider.xcdatamodel */;
+			path = PoetrySpider.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 372A48851BEB93AF007D632A /* Project object */;
+}
