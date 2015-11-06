@@ -204,6 +204,8 @@ NS_ASSUME_NONNULL_BEGIN
     for (HTMLTextNode *node in self.treeEnumerator) {
         if ([node isKindOfClass:[HTMLTextNode class]]) {
             [parts addObject:node.data];
+        }else if ([node isKindOfClass:[HTMLElement class]] && [[(HTMLElement *)node tagName] isEqualToString:@"br"]){
+            [parts addObject:@"\n"];
         }
     }
     return [parts componentsJoinedByString:@""];

@@ -1,10 +1,17 @@
 PODS:
+  - FMDB (2.5):
+    - FMDB/standard (= 2.5)
+  - FMDB/common (2.5)
+  - FMDB/standard (2.5):
+    - FMDB/common
   - HTMLReader (0.9.2)
 
 DEPENDENCIES:
+  - FMDB
   - HTMLReader
 
 SPEC CHECKSUMS:
+  FMDB: 96e8f1bcc1329e269330f99770ad4285d9003e52
   HTMLReader: 57bcea70beb6958dce355925a5e82eab3eb04cc3
 
 COCOAPODS: 0.39.0

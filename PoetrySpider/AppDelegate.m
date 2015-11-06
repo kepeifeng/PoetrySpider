@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import <HTMLReader/HTMLReader.h>
 @interface AppDelegate ()
 
 - (IBAction)saveAction:(id)sender;
@@ -18,6 +18,163 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     // Insert code here to initialize your application
+    
+    // Load a web page.
+    NSURL *URL = [NSURL URLWithString:@"http://so.gushiwen.org/view_71146.aspx"];
+    NSURLSession *session = [NSURLSession sharedSession];
+    [[session dataTaskWithURL:URL completionHandler:
+      ^(NSData *data, NSURLResponse *response, NSError *error) {
+          
+          if(error){
+          
+              NSLog(@"error:%@", error);
+              return ;
+          }
+              
+          
+          NSString *contentType = nil;
+          if ([response isKindOfClass:[NSHTTPURLResponse class]]) {
+              NSDictionary *headers = [(NSHTTPURLResponse *)response allHeaderFields];
+              contentType = headers[@"Content-Type"];
+          }
+          
+//          NSString * html = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+//          [html writeToFile:@"~/Desktop/shi.html" atomically:YES encoding:NSUTF8StringEncoding error:nil];
+//          NSLog(@"%@", html);
+          
+          HTMLDocument *home = [HTMLDocument documentWithData:data
+                                            contentTypeHeader:contentType];
+          
+          HTMLElement * titleElement = [home firstNodeMatchingSelector:@".main3 .son1 h1"];
+          NSLog(@"title:%@", titleElement.textContent);
+          
+          HTMLElement * articleElement = [home firstNodeMatchingSelector:@".main3 .son2"];
+          
+          NSArray * pElements = [articleElement nodesMatchingSelector:@"p"];
+          HTMLElement * dynasty = [pElements firstObject];
+          NSLog(@"dynasty:%@", dynasty.textContent);
+          
+          HTMLElement * authorElement = pElements[1];
+          
+          if (pElements.count > 3) {
+              NSRange range = NSMakeRange(3, pElements.count - 3);
+              NSArray * contentElements = [pElements subarrayWithRange:range];
+          }
+          
+          NSArray * summaryElements = [home nodesMatchingSelector:@".son5"];
+          NSMutableArray * translateUrls = [[NSMutableArray alloc] initWithCapacity:3];
+          NSMutableArray * shanxiUrls = [[NSMutableArray alloc] initWithCapacity:3];
+          for (HTMLElement * divElement in summaryElements) {
+              
+              NSString * elementId = divElement.attributes[@"id"];
+              HTMLElement * link = [divElement firstNodeMatchingSelector:@"a"];
+              NSString * urlString = link.attributes[@"href"];
+              
+              if (urlString.length == 0) {
+                  continue;
+              }
+              
+              if([elementId hasPrefix:@"fanyi"]){
+                  [translateUrls addObject:urlString];
+                  [self getTranslateFromUrl:urlString forEntityId:123];
+              }else if ([elementId hasPrefix:@"shangxi"]){
+                  [shanxiUrls addObject:urlString];
+                  [self getTranslateFromUrl:urlString forEntityId:123];
+              }
+                  
+              NSLog(@"elementId:%@, urlString:%@", elementId, urlString);
+              
+          }
+
+          
+//          HTMLElement *div = [home firstNodeMatchingSelector:@".repository-description"];
+//          NSCharacterSet *whitespace = [NSCharacterSet whitespaceAndNewlineCharacterSet];
+//          NSLog(@"%@", [div.textContent stringByTrimmingCharactersInSet:whitespace]);
+          // => A WHATWG-compliant HTML parser in Objective-C.
+      }] resume];
+    
+}
+
+-(void)getTranslateFromUrl:(NSString *)urlString forEntityId:(int64_t)entityId{
+
+    NSURL * url = [NSURL URLWithString:[NSString stringWithFormat:@"http://so.gushiwen.org%@", urlString]];
+    
+    NSURLSession *session = [NSURLSession sharedSession];
+    [[session dataTaskWithURL:url completionHandler:
+      ^(NSData *data, NSURLResponse *response, NSError *error) {
+          
+          if(error){
+              
+              NSLog(@"error:%@", error);
+              return ;
+          }
+          
+          
+          NSString *contentType = nil;
+          if ([response isKindOfClass:[NSHTTPURLResponse class]]) {
+              NSDictionary *headers = [(NSHTTPURLResponse *)response allHeaderFields];
+              contentType = headers[@"Content-Type"];
+          }
+          
+          HTMLDocument *home = [HTMLDocument documentWithData:data
+                                            contentTypeHeader:contentType];
+          
+          HTMLElement * titleElement = [home firstNodeMatchingSelector:@"div.main3 .son1 h1"];
+          NSString * title = [titleElement textContent];
+          
+          HTMLElement * contentDiv = [home firstNodeMatchingSelector:@".shangxicont"];
+          
+          NSOrderedSet * children = [contentDiv children];
+          
+          NSOrderedSet * contentElements = [NSOrderedSet orderedSetWithOrderedSet:children range:(NSMakeRange(2, children.count - 6)) copyItems:NO];
+          NSMutableString * text = [[NSMutableString alloc] init];
+          
+          BOOL shouldBreakLine = NO;
+          for (HTMLNode * node in contentElements) {
+              
+              if (shouldBreakLine) {
+                  [text appendString:@"\n"];
+              }
+              
+              if ([node isKindOfClass:[HTMLTextNode class]]) {
+                  [text appendString:[(HTMLTextNode *)node data]];
+                  shouldBreakLine = NO;
+              }else if([node isKindOfClass:[HTMLElement class]]){
+                  HTMLElement * element = (HTMLElement *)node;
+                  NSString * elementText = [element textContent];
+                  if ([elementText hasPrefix:@"本页内容整理自网络"]) {
+                      continue;
+                  }
+                  [text appendString:elementText];
+                  if([element.tagName isEqualToString:@"p"]) {
+                      shouldBreakLine = YES;
+                  }else{
+                      shouldBreakLine = NO;
+                  }
+              }
+          }
+          
+          NSLog(@"\n%@\n%@", title, text);
+
+          
+          
+//          NSArray * contents = [contentDiv nodesMatchingSelector:@"p"];
+//          contents = [contents subarrayWithRange:(NSMakeRange(1, contents.count - 2))];
+//          
+//          NSLog(@"%@", urlString);
+//          for (HTMLElement * p in contents) {
+//              NSLog(@"%@", p.textContent);
+//          }
+//          
+//          for (NSString * textNode in contentDiv.textComponents){
+//              NSLog(@"%@", textNode);
+//          }
+//          
+          
+          
+          
+          
+      }] resume];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

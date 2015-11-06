@@ -5,6 +5,7 @@
 
 target 'PoetrySpider' do
 pod "HTMLReader"
+pod "FMDB"
 end
 
 target 'PoetrySpiderTests' do
