@@ -16,6 +16,14 @@
 		372A48A01BEB93AF007D632A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372A489E1BEB93AF007D632A /* Main.storyboard */; };
 		372A48AB1BEB93AF007D632A /* PoetrySpiderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 372A48AA1BEB93AF007D632A /* PoetrySpiderTests.m */; };
 		372A48B61BEB93AF007D632A /* PoetrySpiderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 372A48B51BEB93AF007D632A /* PoetrySpiderUITests.m */; };
+		37B45E2C1BEDCC4500A2AEE3 /* PSArticleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B45E2B1BEDCC4500A2AEE3 /* PSArticleManager.m */; };
+		37B45E301BEDD42400A2AEE3 /* NSFileManager+Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B45E2F1BEDD42400A2AEE3 /* NSFileManager+Utility.m */; };
+		37B45E331BEDD4AA00A2AEE3 /* WTArticleEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B45E321BEDD4AA00A2AEE3 /* WTArticleEntity.m */; };
+		37B45E361BEDD54400A2AEE3 /* WTDynastyEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B45E351BEDD54400A2AEE3 /* WTDynastyEntity.m */; };
+		37B45E391BEDD57E00A2AEE3 /* WTPoetryDetailEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B45E381BEDD57E00A2AEE3 /* WTPoetryDetailEntity.m */; };
+		37B45E3C1BEDD5BF00A2AEE3 /* WTAuthorEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 37B45E3B1BEDD5BF00A2AEE3 /* WTAuthorEntity.m */; };
+		37B45E3D1BEDFA0D00A2AEE3 /* poetry.db in Resources */ = {isa = PBXBuildFile; fileRef = 37B45E2D1BEDD3DC00A2AEE3 /* poetry.db */; };
+		37BEFD2B1BECDC1A00F6BEE6 /* PoetrySpider.m in Sources */ = {isa = PBXBuildFile; fileRef = 37BEFD2A1BECDC1A00F6BEE6 /* PoetrySpider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +60,21 @@
 		372A48B11BEB93AF007D632A /* PoetrySpiderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoetrySpiderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		372A48B51BEB93AF007D632A /* PoetrySpiderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoetrySpiderUITests.m; sourceTree = "<group>"; };
 		372A48B71BEB93AF007D632A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37B45E2A1BEDCC4500A2AEE3 /* PSArticleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSArticleManager.h; sourceTree = "<group>"; };
+		37B45E2B1BEDCC4500A2AEE3 /* PSArticleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSArticleManager.m; sourceTree = "<group>"; };
+		37B45E2D1BEDD3DC00A2AEE3 /* poetry.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = poetry.db; sourceTree = "<group>"; };
+		37B45E2E1BEDD42400A2AEE3 /* NSFileManager+Utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Utility.h"; sourceTree = "<group>"; };
+		37B45E2F1BEDD42400A2AEE3 /* NSFileManager+Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Utility.m"; sourceTree = "<group>"; };
+		37B45E311BEDD4AA00A2AEE3 /* WTArticleEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTArticleEntity.h; sourceTree = "<group>"; };
+		37B45E321BEDD4AA00A2AEE3 /* WTArticleEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTArticleEntity.m; sourceTree = "<group>"; };
+		37B45E341BEDD54400A2AEE3 /* WTDynastyEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTDynastyEntity.h; sourceTree = "<group>"; };
+		37B45E351BEDD54400A2AEE3 /* WTDynastyEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTDynastyEntity.m; sourceTree = "<group>"; };
+		37B45E371BEDD57E00A2AEE3 /* WTPoetryDetailEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTPoetryDetailEntity.h; sourceTree = "<group>"; };
+		37B45E381BEDD57E00A2AEE3 /* WTPoetryDetailEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTPoetryDetailEntity.m; sourceTree = "<group>"; };
+		37B45E3A1BEDD5BF00A2AEE3 /* WTAuthorEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTAuthorEntity.h; sourceTree = "<group>"; };
+		37B45E3B1BEDD5BF00A2AEE3 /* WTAuthorEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTAuthorEntity.m; sourceTree = "<group>"; };
+		37BEFD291BECDC1A00F6BEE6 /* PoetrySpider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoetrySpider.h; sourceTree = "<group>"; };
+		37BEFD2A1BECDC1A00F6BEE6 /* PoetrySpider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoetrySpider.m; sourceTree = "<group>"; };
 		51661A6F3F6B652850FA1707 /* Pods-PoetrySpider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoetrySpider.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PoetrySpider/Pods-PoetrySpider.debug.xcconfig"; sourceTree = "<group>"; };
 		6D135A4069F24AC72E1ECB87 /* libPods-PoetrySpider.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PoetrySpider.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B454D7B0E8E317C7D9CC8BD0 /* Pods-PoetrySpider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PoetrySpider.release.xcconfig"; path = "Pods/Target Support Files/Pods-PoetrySpider/Pods-PoetrySpider.release.xcconfig"; sourceTree = "<group>"; };
@@ -110,13 +133,28 @@
 			children = (
 				372A48901BEB93AF007D632A /* AppDelegate.h */,
 				372A48911BEB93AF007D632A /* AppDelegate.m */,
+				37B45E2D1BEDD3DC00A2AEE3 /* poetry.db */,
 				372A48961BEB93AF007D632A /* ViewController.h */,
 				372A48971BEB93AF007D632A /* ViewController.m */,
 				372A489C1BEB93AF007D632A /* Assets.xcassets */,
 				372A489E1BEB93AF007D632A /* Main.storyboard */,
 				372A48A11BEB93AF007D632A /* Info.plist */,
 				372A48991BEB93AF007D632A /* PoetrySpider.xcdatamodeld */,
+				37B45E2E1BEDD42400A2AEE3 /* NSFileManager+Utility.h */,
+				37B45E2F1BEDD42400A2AEE3 /* NSFileManager+Utility.m */,
 				372A48931BEB93AF007D632A /* Supporting Files */,
+				37BEFD291BECDC1A00F6BEE6 /* PoetrySpider.h */,
+				37BEFD2A1BECDC1A00F6BEE6 /* PoetrySpider.m */,
+				37B45E2A1BEDCC4500A2AEE3 /* PSArticleManager.h */,
+				37B45E2B1BEDCC4500A2AEE3 /* PSArticleManager.m */,
+				37B45E311BEDD4AA00A2AEE3 /* WTArticleEntity.h */,
+				37B45E321BEDD4AA00A2AEE3 /* WTArticleEntity.m */,
+				37B45E341BEDD54400A2AEE3 /* WTDynastyEntity.h */,
+				37B45E351BEDD54400A2AEE3 /* WTDynastyEntity.m */,
+				37B45E371BEDD57E00A2AEE3 /* WTPoetryDetailEntity.h */,
+				37B45E381BEDD57E00A2AEE3 /* WTPoetryDetailEntity.m */,
+				37B45E3A1BEDD5BF00A2AEE3 /* WTAuthorEntity.h */,
+				37B45E3B1BEDD5BF00A2AEE3 /* WTAuthorEntity.m */,
 			);
 			path = PoetrySpider;
 			sourceTree = "<group>";
@@ -272,6 +310,7 @@
 			files = (
 				372A489D1BEB93AF007D632A /* Assets.xcassets in Resources */,
 				372A48A01BEB93AF007D632A /* Main.storyboard in Resources */,
+				37B45E3D1BEDFA0D00A2AEE3 /* poetry.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,10 +383,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37B45E331BEDD4AA00A2AEE3 /* WTArticleEntity.m in Sources */,
+				37B45E3C1BEDD5BF00A2AEE3 /* WTAuthorEntity.m in Sources */,
 				372A48981BEB93AF007D632A /* ViewController.m in Sources */,
+				37B45E2C1BEDCC4500A2AEE3 /* PSArticleManager.m in Sources */,
+				37B45E391BEDD57E00A2AEE3 /* WTPoetryDetailEntity.m in Sources */,
+				37BEFD2B1BECDC1A00F6BEE6 /* PoetrySpider.m in Sources */,
 				372A48951BEB93AF007D632A /* main.m in Sources */,
 				372A48921BEB93AF007D632A /* AppDelegate.m in Sources */,
+				37B45E361BEDD54400A2AEE3 /* WTDynastyEntity.m in Sources */,
 				372A489B1BEB93AF007D632A /* PoetrySpider.xcdatamodeld in Sources */,
+				37B45E301BEDD42400A2AEE3 /* NSFileManager+Utility.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
